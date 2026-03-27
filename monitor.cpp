@@ -12,15 +12,15 @@ struct AlphaTelemetry {
 
 int main() {
     // Bloomberg "The Close" - Verified Friday, March 27, 2026
-    // Market Impact: 5th straight losing week; Nasdaq in official correction.
+    // US Stocks worst week since Iran war began; 5th straight losing week.
     std::vector<AlphaTelemetry> report = {
-        {"NASDAQ", 20948.36, -2.10, "CORRECTION"}, 
-        {"S&P 500", 6368.85, -1.70, "YEARLY_LOW"},
-        {"DOW JONES", 45166.64, -1.70, "BEAR_THREAT"},
-        {"PANW", 144.14, -7.82, "SECTOR_LOW"},   // Hit $143.50 intraday low
-        {"WTI_CRUDE", 99.64, 5.50, "WAR_PREMIUM"}, // Settlement high near $100
-        {"BRENT_OIL", 105.32, 3.40, "SUPPLY_SHOCK"},
-        {"GOLD_SPOT", 4510.43, 2.98, "SAFE_HAVEN"}  
+        {"NASDAQ_COMP", 20948.36, -2.15, "CORRECTION"}, 
+        {"S&P_500", 6375.85, -1.67, "BEAR_THREAT"},
+        {"DOW_JONES", 45166.64, -1.73, "WEEKLY_LOW"},
+        {"PANW", 147.02, -5.97, "SECTOR_LOW"},    // Session low hit $143.50
+        {"WTI_CRUDE", 99.26, 5.06, "WAR_PREMIUM"},  // Near $100 psychological
+        {"BRENT_OIL", 112.49, 4.14, "SUPPLY_SHOCK"}, // 7% intraday surge
+        {"GOLD_SPOT", 4518.37, 3.30, "SAFE_HAVEN"}  
     };
 
     std::cout << "\033[1;34m--- ALPHA FOX QUANT: FINAL SESSION SYNC [03/27/2026] ---\033[0m" << std::endl;
@@ -35,7 +35,7 @@ int main() {
                   << item.status << std::endl;
     }
     
-    std::cout << "\n\033[1;33mINTEL: Arak/Yazd facilities hit. Iran rejects 15-point plan.\033[0m" << std::endl;
-    std::cout << "\033[1;33mDEADLINE: Hormuz clearance extended to April 6 (8:00 PM ET).\033[0m" << std::endl;
+    std::cout << "\n\033[1;33mINTEL: Arak & Yazd nuclear sites hit. Iran vowing 'Heavy Price'.\033[0m" << std::endl;
+    std::cout << "\033[1;31mURGENT: VIX hits 31.05. Brent +54% YTD. Hormuz deadline Apr 6.\033[0m" << std::endl;
     return 0;
 }
