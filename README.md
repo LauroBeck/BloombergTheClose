@@ -30,3 +30,10 @@ To refresh the telemetry and generate updated graphs:
 ```bash
 python3 stargate_rebalance.py
 python3 visualize_inflection.py
+
+## Market Regime Targets
+| Target Type | Level | Distance | Strategy |
+| :--- | :--- | :--- | :--- |
+| **Bullish Pivot** | 6,500.00 | +2.46% | Resumption / Long Growth |
+| **Current Close** | 6,343.72 | 0.00% | Neutral / Defensive |
+| **Institutional Floor** | 6,145.00 | -3.13% | Systemic Snap / Max Hedge |
