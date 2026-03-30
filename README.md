@@ -1,38 +1,31 @@
-# BloombergTheClose | Sovereign Telemetry Suite v5.3
+# BloombergTheClose | Sovereign Telemetry Suite v5.4
 
 ![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg)
 ![Python](https://img.shields.io/badge/Python-3.13-blue.svg)
 ![Market-Date](https://img.shields.io/badge/Market--Date-March_30,_2026-gold.svg)
 
-## 📊 Market Regime Dashboard
-The index is currently compressed in a **355-point range** between systemic risk and bullish resumption.
+## 📊 Dual-Path Telemetry Dashboard
 
-### Structural Gravity Graph (v2.0)
+### 1. Risk Defense: Structural Gravity Analysis
+This monitor tracks the **2.28% buffer** remaining before the institutional floor. The "Projected Inflection" identifies the mechanical snap point for the April 6 risk window.
+
 ![S&P 500 Inflection Graph](./spx_inflection_graph.png)
 
-### Strategy Matrix
-| Metric | Threshold | Current | Signal |
-| :--- | :--- | :--- | :--- |
-| **Bullish Breakout** | 6,500.00 | 6,343.72 | **Resistance Active** |
-| **Support Buffer** | 6,145.00 | +3.13% | **Holding** |
-| **IBM Resilience** | > 1.00 | 1.12 | **Strong Anchor** |
+### 2. Opportunity Alpha: The Road to 6,500
+This projection identifies the "Peace Dividend" trajectory. A breakout above the **6,500 Bullish Pivot** signals a regime shift from defensive hedging to growth resumption.
+
+![S&P 500 6500 Projection](./spx_6500_projection.png)
 
 ---
 
-## 🛠 Logic: `spx_monitor_v2.py`
-This engine calculates the distance to the **6,500 Pivot**. Reclaiming this level flips the **C++ SIMD clusters** from Defensive (Hedged) to Aggressive (Growth).
+## 🛠 Strategic Architecture
+* **Yield Resistance:** 4.44% (Discount Factor applied)
+* **Hormuz Risk Coefficient:** Active (High Oil Impact)
+* **Primary Anchors:** IBM / CVX / XOM (Inverse Correlation active)
+* **Liquidation Targets:** PYPL / MTCH (High Beta, No Infra)
 
 ## 🚀 Execution
+Run the following to update the visual telemetry:
 ```bash
-python3 spx_monitor_v2.py
 python3 visualize_inflection.py
-
-## 📈 The Road to 6,500 (Bullish Case)
-If the **April 6 deadline** results in a de-escalation of the Hormuz blockade, the engine projects a rapid mean-reversion to the **6,500 technical gate**.
-
-### Recovery Trajectory Graph
-![S&P 500 6500 Projection](./spx_6500_projection.png)
-
-- **Catalyst:** Oil Reversion < $95
-- **Requirement:** Yield Compression < 4.20%
-- **Action:** Re-activate Growth Cluster (NVDA/MSFT)
+python3 visualize_6500.py
