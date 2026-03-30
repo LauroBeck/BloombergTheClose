@@ -26,3 +26,13 @@ This engine calculates the distance to the **6,500 Pivot**. Reclaiming this leve
 ```bash
 python3 spx_monitor_v2.py
 python3 visualize_inflection.py
+
+## 📈 The Road to 6,500 (Bullish Case)
+If the **April 6 deadline** results in a de-escalation of the Hormuz blockade, the engine projects a rapid mean-reversion to the **6,500 technical gate**.
+
+### Recovery Trajectory Graph
+![S&P 500 6500 Projection](./spx_6500_projection.png)
+
+- **Catalyst:** Oil Reversion < $95
+- **Requirement:** Yield Compression < 4.20%
+- **Action:** Re-activate Growth Cluster (NVDA/MSFT)
